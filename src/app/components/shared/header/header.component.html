@@ -1,22 +1,51 @@
+<ul class="nav container">
+  <li class="nav-item">
+    <img class="mt-1" [src]="logo">
+  </li>
+  <li class="nav-item">
+    <label class="nav-link cursor-pt active-link">For you & family</label>
+  </li>
+  <li class="nav-item">
+    <label class="nav-link subtitle">For Business</label>
+  </li>
+</ul>
+
 <div class="container">
-  <ul class="nav">
-    <li class="nav-item">
-      <img class="mt-1" [src]="logo">
-    </li>
-    <li class="nav-item">
-      <label class="nav-link cursor-pt active-link">For you & family</label>
-    </li>
-    <li class="nav-item">
-      <label class="nav-link desabled-link">For Business</label>
-    </li>
-  </ul>
-  <div class="container">
-    <label class="left-hello">Hello, We are Fincorp</label> <br>
-    <label class="left-bold-title mt-2">Insurance <br> made easy.</label> <br>
-    <input type="button" class="btn-quote mt-3" value="Get your free Quote">
+  <label class="left-hello">Hello, We are Fincorp</label> <br>
+  <label class="left-bold-title mt-2">Insurance <br> made easy.</label> <br>
+  <input type="button" class="btn-quote mt-3" value="Get your free Quote">
+</div>
+
+<div class="container text-center row-banner">
+  <label class="title">A new take on insurance</label> <br>
+  <label class="subtitle">Great for individuals and business</label>
+</div>
+
+<div class="row g-3 bot-container">
+  <div class="col-md-5">
+    <img class="img-health-family" [src]="healthFamily">
   </div>
-  <div class="container">
+  <div class="col-md-7">
+    <p class="right-title">Monotonectally deploy seamless data and <br> resource maximizing systems.</p>
+    <p>Great for individuals and small families up to 4 members.</p>
+    <p class="subtitle">A strong, up-to-date, employee benefits health insurance program is vital for <br>
+      attracting and retaining good employees. It takes diligence, creativity and attention to <br>
+      detail to ensure you are getting the best “bang for your buck” each and every year.</p>
+
+    <div class="card card-container mt-3 cursor-pt" *ngFor="let choice of listChoice">
+      <div class="row g-0">
+        <div class="col-md-2 text-center">
+          <img [src]="tick" class="mt-2 img-tick">
+        </div>
+        <div class="col-md-10">
+          <p class="mt-2">
+            <span class="title-content">{{choice.title}}</span> <br>
+            <span class="subtitle">{{choice.explanation}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
-  <img class="img-banner" [src]="banner">
 </div>
+<img class="img-banner" [src]="banner">

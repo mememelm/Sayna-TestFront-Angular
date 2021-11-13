@@ -8,11 +8,6 @@ li {
     font-size: smaller;
     font-weight: bold;
   }
-
-  .desabled-link {
-    color: $subtitle;
-    font-size: smaller;
-  }
 }
 
 .left-hello {
@@ -31,9 +26,9 @@ li {
 
 .img-banner {
   float: right !important;
-  width: 1000px;
+  width: 750px;
   position: relative;
-  transform: translateY(-75%);
+  transform: translateY(-180%);
 }
 
 .btn-quote {
@@ -43,4 +38,43 @@ li {
   padding: 10px 20px;
   border: none !important;
   border-radius: 3px;
+}
+
+.row-banner {
+  margin-top: 150px;
+}
+
+.bot-container {
+  margin-top: 30px;
+
+  .img-health-family {
+    float: left !important;
+    width: 725px;
+    position: relative;
+  }
+
+  .right-title {
+    color: $family_title;
+    font-size: large;
+    font-weight: 600;
+  }
+
+  .card-container {
+    max-width: 540px;
+    border: none;
+
+    .img-tick {
+      width: 40px;
+    }
+
+    .title-content {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: smaller;
+    }
+  }
+
+  .card-container:hover {
+    box-shadow: 2px 2px 4px #000000;
+  }
 }

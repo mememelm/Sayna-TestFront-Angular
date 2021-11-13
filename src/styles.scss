@@ -5,3 +5,20 @@
 .cursor-pt {
   cursor: pointer;
 }
+
+.title {
+  color: $title_global;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.second-title {
+  color: $title_global;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: $subtitle;
+  font-size: smaller;
+}

@@ -1,0 +1,76 @@
+@import "../../../../sass/variables.scss";
+
+p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price-content {
+  box-shadow: 0 4px 8px 0 $shadow;
+  border: none;
+}
+
+.index-content {
+  z-index: 4;
+}
+
+.basic {
+  color: $font_one;
+  letter-spacing: 1.5px;
+}
+
+.professional {
+  color: $font_two;
+  letter-spacing: 1.5px;
+}
+
+.premium {
+  color: $font_three;
+  letter-spacing: 1.5px;
+}
+
+.price {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-left: 88px;
+  justify-content: center !important;
+}
+
+.price-basic {
+  background-color: $font_green_bg;
+  color: $font_green_color;
+}
+
+.price-professional {
+  background-color: $font_two;
+  color: white;
+}
+
+.price-premium {
+  background-color: $font_blue_bg;
+  color: $font_blue_color;
+}
+
+.currency-basic {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-left: 12px;
+  float: left;
+}
+
+.currency {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 6px;
+  float: left;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.states {
+  float: left !important;
+}

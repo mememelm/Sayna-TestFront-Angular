@@ -31,9 +31,27 @@
   border: none !important;
   border-radius: 3px;
 }
+.button-orange {
+  color: #fff;
+  background: $font_two;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none !important;
+  border-radius: 3px;
+}
+
+.button-blue {
+  color: #fff;
+  background: $font_three;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none !important;
+  border-radius: 3px;
+}
 
 .card-comp {
-  margin-top: 200px;
+  margin-top: 180px;
+  margin-bottom: 50px;
   max-width: 800px;
 
   .card-content-comp {

@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
+  listBasic = [
+    {states: 'Rapidiously strategize value'},
+    {states: 'Progressively visualize leadership'},
+    {states: 'Equity invested supply chains'}
+  ]
+
+  listProfessional = [
+    {states: 'Rapidiously strategize value'},
+    {states: 'Progressively visualize leadership'},
+    {states: 'Equity invested supply chains'},
+    {states: 'Proactively leverage'}
+  ]
+
+  listPremium = [
+    {states: 'Rapidiously strategize value'},
+    {states: 'Progressively visualize leadership'},
+    {states: 'Equity invested supply chains'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

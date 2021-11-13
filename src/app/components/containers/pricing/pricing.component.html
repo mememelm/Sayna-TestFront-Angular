@@ -1,1 +1,24 @@
-<p>pricing works!</p>
+<div class="container text-center">
+  <label class="title mt-5">Honest Pricing</label> <br>
+  <label class="subtitle">Simple & honest pricing. No hidden fees.</label>
+
+  <div class="container row justify-content-center mt-5">
+    <div class="card price-content col-3 mt-3">
+      <p class="basic mt-4">BASIC</p> <br>
+      <p class="price price-basic"><span class="currency-basic">$</span><span class="value">9</span></p> <br>
+      <div class="states">
+        <p *ngFor="let basic of listBasic"><i class="fas fa-check-circle"></i>{{basic.states}}</p>
+      </div>
+    </div>
+    <div class="card price-content index-content col-3">
+      <p class="professional mt-4">PROFESSIONAL</p> <br>
+      <p class="price price-professional"><span class="currency">$</span><span class="value">19</span></p>
+      <p *ngFor="let professional of listProfessional"><i class="fas fa-check-circle"></i>{{professional.states}}</p>
+    </div>
+    <div class="card price-content col-3 mt-3">
+      <p class="premium mt-4">PREMIUM</p> <br>
+      <p class="price price-premium"><span class="currency">$</span><span class="value">49</span></p>
+      <p *ngFor="let premium of listPremium"><i class="fas fa-check-circle"></i>{{premium.states}}</p>
+    </div>
+  </div>
+</div>

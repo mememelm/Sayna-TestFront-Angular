@@ -1,4 +1,4 @@
-import { Endpoints } from 'src/app/constants/classes/endPoints';
+import { Endpoints } from 'src/app/constants/classes/endpoints';
 
 export const ImageList = {
   banner: Endpoints.LINK_IMAGE_STORAGE + 'banner-1.png?alt=media&token=9c7549ab-baa1-4317-84e4-9fe3a2289cf7',

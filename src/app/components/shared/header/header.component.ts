@@ -1,7 +1,7 @@
 import { ControllerService } from './../../../services/controller.service';
 import { Component, OnInit } from '@angular/core';
 import { ImageList } from 'src/app/constants/helpers/images-list';
-import { Endpoints } from 'src/app/constants/classes/endPoints';
+import { Endpoints } from 'src/app/constants/classes/endpoints';
 
 @Component({
   selector: 'app-header',

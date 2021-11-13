@@ -10,5 +10,7 @@ export const ImageList = {
   insuranceLife: Endpoints.LINK_IMAGE_STORAGE + 'life-insurance-1.png?alt=media&token=36965917-8551-49d8-83e1-63a7f3e95990',
   insuranceBusiness: Endpoints.LINK_IMAGE_STORAGE + 'business-insurance-1.png?alt=media&token=91a8c6f8-43d9-406e-8cf4-6e9a7833adde',
   insuranceTravel: Endpoints.LINK_IMAGE_STORAGE + 'travel-insurance-1.png?alt=media&token=9f25eccd-b09c-4107-b0d8-5d1a251f1d59',
-  insuranceOther: Endpoints.LINK_IMAGE_STORAGE + 'other-insurance-1.png?alt=media&token=1b6e7607-8df1-4a75-bf98-daa7c52d01fd'
+  insuranceOther: Endpoints.LINK_IMAGE_STORAGE + 'other-insurance-1.png?alt=media&token=1b6e7607-8df1-4a75-bf98-daa7c52d01fd',
+  afterBlue: Endpoints.LINK_IMAGE_STORAGE + 'after-blue.png?alt=media&token=73b05474-c4a7-41dc-a919-fbf68b0eb536',
+  afterPink: Endpoints.LINK_IMAGE_STORAGE + 'after-pink.png?alt=media&token=e7bcc012-de72-46ce-b3d0-de6d436571ea'
 }

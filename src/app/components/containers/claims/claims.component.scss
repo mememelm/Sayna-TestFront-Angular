@@ -1,0 +1,37 @@
+@import "../../../../sass/variables.scss";
+
+.number {
+  width: 60px;
+  height: 60px;
+  margin: 20px 20px;
+  border-radius: 50px;
+  margin-left: 100px;
+}
+
+.number-one {
+  background-color: $number_one_bg;
+  .one {
+    color: $number_one;
+    font-size: 36px;
+  }
+}
+
+.number-two {
+  background-color: $number_two_bg;
+  .two {
+    color: $number_two;
+    font-size: 36px;
+  }
+}
+
+.number-three {
+  background-color: $number_three_bg;
+  .three {
+    color: $number_three;
+    font-size: 36px;
+  }
+}
+
+img {
+  margin-top: 50px;
+}

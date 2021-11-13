@@ -1,8 +1,14 @@
+import { FirebaseConfiguration } from './constants/config/firebase-configuration';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
+import { getFirestore, provideFirestore } from "@angular/fire/firestore";
+import { getStorage, provideStorage } from "@angular/fire/storage";
+
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { InsuranceComponent } from './components/containers/insurance/insurance.component';
@@ -30,7 +36,18 @@ import { FooterComponent } from './components/shared/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp({
+      apiKey: FirebaseConfiguration.apiKey,
+      authDomain: FirebaseConfiguration.authDomain,
+      projectId: FirebaseConfiguration.projectId,
+      storageBucket: FirebaseConfiguration.storageBucket,
+      messagingSenderId: FirebaseConfiguration.messagingSenderId,
+      appId: FirebaseConfiguration.appId,
+      measurementId: FirebaseConfiguration.measurementId
+    })),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

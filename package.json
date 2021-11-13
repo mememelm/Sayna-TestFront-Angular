@@ -19,7 +19,11 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@firebase/auth": "^0.19.3",
+    "@firebase/auth-types": "^0.11.0",
+    "@firebase/firestore": "^3.3.0",
     "firebase": "^9.4.1",
+    "rxfire": "^6.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

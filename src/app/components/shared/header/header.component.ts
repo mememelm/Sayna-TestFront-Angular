@@ -10,12 +10,14 @@ import { Endpoints } from 'src/app/constants/classes/endpoints';
 })
 export class HeaderComponent implements OnInit {
 
+  logo!: string
   banner!: string
 
   constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
-    this.banner = Endpoints.SECURE + this.ctrl.firebase.loadImage(ImageList.banner)
+    this.logo = this.ctrl.image(ImageList.logo)
+    this.banner = this.ctrl.image(ImageList.banner)
   }
 
 }

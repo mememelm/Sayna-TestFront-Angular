@@ -8,8 +8,8 @@ export class FirebaseService {
 
   constructor(private firestore: Firestore) { }
 
-  loadImage(path: string) {
-    const el = doc(this.firestore, path).path
-    return el
+  getImage(path: string): string {
+    const element = doc(this.firestore, path).path
+    return element
   }
 }

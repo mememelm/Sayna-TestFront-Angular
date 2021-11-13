@@ -1,1 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+@import "./sass/variables.scss";
+
+.cursor-pt {
+  cursor: pointer;
+}

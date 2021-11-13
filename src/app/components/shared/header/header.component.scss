@@ -1,0 +1,23 @@
+@import "../../../../sass/variables.scss";
+
+li {
+  padding: 10px;
+
+  .active-link {
+    color: $black_theme;
+    font-size: smaller;
+    font-weight: bold;
+  }
+
+  .desabled-link {
+    color: $subtitle;
+    font-size: smaller;
+  }
+}
+
+.img-banner {
+  float: right !important;
+  width: 700px;
+  position: relative;
+  transform: translateY(-30%);
+}

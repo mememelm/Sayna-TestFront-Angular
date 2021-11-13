@@ -24,13 +24,6 @@ li {
   font-weight: bolder;
 }
 
-.img-banner {
-  float: right !important;
-  width: 750px;
-  position: relative;
-  transform: translateY(-180%);
-}
-
 .btn-quote {
   color: #fff;
   background: linear-gradient(to right, $h_app_transition, $h_app);

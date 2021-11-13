@@ -1,3 +1,5 @@
+import { ImageList } from 'src/app/constants/helpers/images-list';
+import { ControllerService } from './../../services/controller.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  banner!: string
+
+  constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
+    this.banner = this.ctrl.image(ImageList.banner)
+
   }
 
 }

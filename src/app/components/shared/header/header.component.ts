@@ -1,7 +1,6 @@
 import { ControllerService } from './../../../services/controller.service';
 import { Component, OnInit } from '@angular/core';
 import { ImageList } from 'src/app/constants/helpers/images-list';
-import { Endpoints } from 'src/app/constants/classes/endpoints';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +10,6 @@ import { Endpoints } from 'src/app/constants/classes/endpoints';
 export class HeaderComponent implements OnInit {
 
   logo!: string
-  banner!: string
   healthFamily!: string
   tick!: string
 
@@ -34,7 +32,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.logo = this.ctrl.image(ImageList.logo)
-    this.banner = this.ctrl.image(ImageList.banner)
     this.healthFamily = this.ctrl.image(ImageList.healthFamily)
     this.tick = this.ctrl.image(ImageList.tick)
   }

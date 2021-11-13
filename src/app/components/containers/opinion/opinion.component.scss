@@ -3,6 +3,7 @@
 .content-opinion {
   margin-top: 150px;
   margin-left: 150px;
+  position:  relative !important;
 
   .text-opinion {
     margin-top: 20px;
@@ -17,10 +18,10 @@
   }
 }
 
-.img-opinion {
-  width: 1200px;
-  float: right;
-  position: relative;
-  transform: translate(25%, -350px);
-  z-index: -3;
-}
+// .img-opinion {
+//   width: 1200px;
+//   float: right;
+//   position: relative;
+//   transform: translate(25%, -85%);
+//   z-index: -3;
+// }

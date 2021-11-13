@@ -10,11 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   banner!: string
+  opinionImage!: string
 
   constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
     this.banner = this.ctrl.image(ImageList.banner)
+    this.opinionImage = this.ctrl.image(ImageList.opinion)
   }
 
 }

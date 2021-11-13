@@ -10,13 +10,11 @@ import { ImageList } from 'src/app/constants/helpers/images-list';
 export class OpinionComponent implements OnInit {
 
   quote!: string
-  opinionImage!: string
 
   constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
     this.quote = this.ctrl.image(ImageList.quote)
-    this.opinionImage = this.ctrl.image(ImageList.opinion)
   }
 
 }

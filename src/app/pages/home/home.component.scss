@@ -2,5 +2,13 @@
   float: right !important;
   width: 750px;
   position: relative;
-  transform: translateY(-460%);
+  transform: translateY(-400%);
+}
+
+.img-opinion {
+  width: 1200px;
+  float: right;
+  position: relative;
+  transform: translate(25%, -290%);
+  z-index: -3;
 }

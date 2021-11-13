@@ -1,0 +1,26 @@
+@import "../../../../sass/variables.scss";
+
+.content-opinion {
+  margin-top: 150px;
+  margin-left: 150px;
+
+  .text-opinion {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .name-opinion {
+    color: $name-opinion;
+    font-size: smaller;
+    font-weight: bold;
+  }
+}
+
+.img-opinion {
+  width: 1200px;
+  float: right;
+  position: relative;
+  transform: translate(25%, -350px);
+  z-index: -3;
+}

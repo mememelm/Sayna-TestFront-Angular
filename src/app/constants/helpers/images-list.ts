@@ -12,5 +12,7 @@ export const ImageList = {
   insuranceTravel: Endpoints.LINK_IMAGE_STORAGE + 'travel-insurance-1.png?alt=media&token=9f25eccd-b09c-4107-b0d8-5d1a251f1d59',
   insuranceOther: Endpoints.LINK_IMAGE_STORAGE + 'other-insurance-1.png?alt=media&token=1b6e7607-8df1-4a75-bf98-daa7c52d01fd',
   afterBlue: Endpoints.LINK_IMAGE_STORAGE + 'after-blue.png?alt=media&token=73b05474-c4a7-41dc-a919-fbf68b0eb536',
-  afterPink: Endpoints.LINK_IMAGE_STORAGE + 'after-pink.png?alt=media&token=e7bcc012-de72-46ce-b3d0-de6d436571ea'
+  afterPink: Endpoints.LINK_IMAGE_STORAGE + 'after-pink.png?alt=media&token=e7bcc012-de72-46ce-b3d0-de6d436571ea',
+  opinion: Endpoints.LINK_IMAGE_STORAGE + 'Composed-layer-2.png?alt=media&token=bfdeada5-4b1e-44cc-9052-a603b16a1f23',
+  quote: Endpoints.LINK_IMAGE_STORAGE + 'quote.png?alt=media&token=f950f508-b4ae-4ee5-a9e0-b29a474f4da7'
 }

@@ -14,5 +14,7 @@ export const ImageList = {
   afterBlue: Endpoints.LINK_IMAGE_STORAGE + 'after-blue.png?alt=media&token=73b05474-c4a7-41dc-a919-fbf68b0eb536',
   afterPink: Endpoints.LINK_IMAGE_STORAGE + 'after-pink.png?alt=media&token=e7bcc012-de72-46ce-b3d0-de6d436571ea',
   opinion: Endpoints.LINK_IMAGE_STORAGE + 'Composed-layer-2.png?alt=media&token=bfdeada5-4b1e-44cc-9052-a603b16a1f23',
-  quote: Endpoints.LINK_IMAGE_STORAGE + 'quote.png?alt=media&token=f950f508-b4ae-4ee5-a9e0-b29a474f4da7'
+  quote: Endpoints.LINK_IMAGE_STORAGE + 'quote.png?alt=media&token=f950f508-b4ae-4ee5-a9e0-b29a474f4da7',
+  shieldBlue: Endpoints.LINK_IMAGE_STORAGE + 'shield-1.png?alt=media&token=a3e60534-706f-4aed-bb27-37c6936b5883',
+  shieldYellow: Endpoints.LINK_IMAGE_STORAGE + 'shield-2.png?alt=media&token=a4fdde85-94ff-47bd-bf29-0695b861ca25'
 }

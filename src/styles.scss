@@ -1,3 +1,28 @@
+@use "~@angular/material" as mat;
+@include mat.core();
+
+$Sayna-Test-Angular-primary: mat.define-palette(mat.$indigo-palette);
+$Sayna-Test-Angular-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
+
+$Sayna-Test-Angular-warn: mat.define-palette(mat.$red-palette);
+
+$Sayna-Test-Angular-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $Sayna-Test-Angular-primary,
+      accent: $Sayna-Test-Angular-accent,
+      warn: $Sayna-Test-Angular-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($Sayna-Test-Angular-theme);
+
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @import "./sass/variables.scss";
@@ -31,6 +56,7 @@
   border: none !important;
   border-radius: 3px;
 }
+
 .button-orange {
   color: #fff;
   background: $font_two;
@@ -38,6 +64,7 @@
   padding: 10px 20px;
   border: none !important;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .button-blue {
@@ -65,4 +92,13 @@
     transform: translateX(-25px);
     width: 50px;
   }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

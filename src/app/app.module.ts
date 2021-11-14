@@ -9,6 +9,9 @@ import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { getStorage, provideStorage } from "@angular/fire/storage";
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { InsuranceComponent } from './components/containers/insurance/insurance.component';
@@ -37,6 +40,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatIconModule,
     provideFirebaseApp(() => initializeApp({
       apiKey: FirebaseConfiguration.apiKey,
       authDomain: FirebaseConfiguration.authDomain,
@@ -47,7 +51,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
       measurementId: FirebaseConfiguration.measurementId
     })),
     provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

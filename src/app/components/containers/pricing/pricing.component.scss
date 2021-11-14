@@ -53,13 +53,6 @@ p {
   color: $font_blue_color;
 }
 
-.currency-basic {
-  font-size: 16px;
-  margin-top: 12px;
-  margin-left: 12px;
-  float: left;
-}
-
 .currency {
   font-size: 16px;
   margin-top: 10px;
@@ -69,8 +62,22 @@ p {
 
 .value {
   font-size: 40px;
+  margin-top: 5px;
 }
 
 .states {
-  float: left !important;
+  text-align: left !important;
+  display: flex;
+}
+
+.el-states {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+mat-icon {
+  color: $icon_bg;
+  background-color: $icon_color;
+  border-radius: 50px;
+  padding-right: 10px;
 }

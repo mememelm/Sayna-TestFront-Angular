@@ -11,12 +11,16 @@ export class HomeComponent implements OnInit {
 
   banner!: string
   opinionImage!: string
+  pricingBackground!: string
+  familyIllustration!: string
 
   constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
     this.banner = this.ctrl.image(ImageList.banner)
     this.opinionImage = this.ctrl.image(ImageList.opinion)
+    this.pricingBackground = this.ctrl.image(ImageList.backgroundPricing)
+    this.familyIllustration = this.ctrl.image(ImageList.familyIllustration)
   }
 
 }

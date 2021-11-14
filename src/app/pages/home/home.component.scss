@@ -2,20 +2,29 @@
   float: right !important;
   width: 750px;
   position: relative;
-  transform: translateY(-430%);
+  transform: translateY(-610%);
+  z-index: -3;
 }
 
 .img-opinion {
   width: 1200px;
   float: right;
   position: relative;
-  transform: translate(25%, -350%);
+  transform: translate(25%, -655%);
   z-index: -3;
 }
 
 .img-pricing {
   float: right;
   position: relative;
-  transform: translate(0, -100%);
+  transform: translate(0, -239%);
+  z-index: -3;
+}
+
+.img-family {
+  width: 500px;
+  float: right;
+  position: relative;
+  transform: translate(0, -455%);
   z-index: -3;
 }

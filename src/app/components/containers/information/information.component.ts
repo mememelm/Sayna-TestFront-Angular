@@ -1,4 +1,6 @@
+import { ControllerService } from './../../../services/controller.service';
 import { Component, OnInit } from '@angular/core';
+import { ImageList } from 'src/app/constants/helpers/images-list';
 
 @Component({
   selector: 'app-information',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformationComponent implements OnInit {
 
-  constructor() { }
+  shieldBlue!: string
+
+  constructor(public ctrl: ControllerService) { }
 
   ngOnInit(): void {
+    this.shieldBlue = this.ctrl.image(ImageList.shieldBlue)
   }
 
 }
